@@ -34,24 +34,24 @@ In plain words: the darker it is and the deeper into the night, the brighter the
 
 ## What was built
 
-1. **Fuzzy controller** (`monument_lighting.fis`): the 2-input, 1-output Mamdani system above.
-2. **Simulink model** (`monument_lighting_model.slx`): Lux and Hour signal generators, offset blocks, a Mux, the Fuzzy Logic Controller block, and a Scope. It confirms the controller gives a changing, sensible brightness output over a simulated 24-hour cycle (1 second = 1 hour).
-3. **Energy analysis** (`monument_analysis.m`): runs the controller against a simulated 12-hour night, integrates brightness over time, and compares the energy with a constant 100% baseline. It also draws the plots and an animated monument.
+1. **Fuzzy controller** (`Monument_Lighting.fis`): the 2-input, 1-output Mamdani system above.
+2. **Simulink model** (`MonumentSimulink.slx`): Lux and Hour signal generators, offset blocks, a Mux, the Fuzzy Logic Controller block, and a Scope. It confirms the controller gives a changing, sensible brightness output over a simulated 24-hour cycle (1 second = 1 hour).
+3. **Energy analysis** (`Monument_Analysis.m`): runs the controller against a simulated 12-hour night, integrates brightness over time, and compares the energy with a constant 100% baseline. It also draws the plots and an animated monument.
 
 ## Files
 
 | File | Purpose |
 |---|---|
-| `monument_lighting.fis` | The fuzzy controller |
-| `monument_lighting_model.slx` | Simulink model |
-| `monument_analysis.m` | Energy analysis, plots and monument animation |
+| `Monument_Lighting.fis` | The fuzzy controller |
+| `MonumentSimulink.slx` | Simulink model |
+| `Monument_Analysis.m` | Energy analysis, plots and monument animation |
 
 ## How to run
 
 Requires MATLAB with the Fuzzy Logic Toolbox. Put all files in one folder.
 
-- **Analysis script:** run `monument_analysis`. It prints the adaptive and baseline energy and saved percentage, then opens the plots and animation.
-- **Simulink model:** in the MATLAB command window run `fis = readfis('monument_lighting');`, then open `monument_lighting_model.slx` and press Run (stop time 24).
+- **Analysis script:** run `Monument_Analysis`. It prints the adaptive and baseline energy and saved percentage, then opens the plots and animation.
+- **Simulink model:** in the MATLAB command window run `fis = readfis('Monument_Lighting');`, then open `MonumentSimulink.slx` and press Run (stop time 24).
 
 ## Results
 
