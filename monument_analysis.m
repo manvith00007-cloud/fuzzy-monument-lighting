@@ -1,4 +1,4 @@
-fis = readfis('MonumentFuzzy1.fis');
+fis = readfis('monument_lighting.fis');
 t   = linspace(0,12,241);  hr = 18 + t;                 % 6 pm to 6 am
 lux = min(max(5 + 55*exp(-t/2) + 4*sin(2*pi*t/6),0),100);
 b   = evalfis(fis,[lux(:) hr(:)])';
