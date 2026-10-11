@@ -24,4 +24,4 @@ Open MATLAB with the Fuzzy Logic Toolbox, put the files in one folder, and run m
 
 ## Author
 Manvith U M, Electrical and Electronics Engineering, NMAMIT, Nitte
-Guide: Gururaj K, Assistant Professor Gd-II, NMAMIT, Mangalore
+Guide: Gururaj K, Assistant Professor Gd-II, NMAMIT.
