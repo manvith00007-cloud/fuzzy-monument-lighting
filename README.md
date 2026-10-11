@@ -104,5 +104,5 @@ MATLAB, Fuzzy Logic Designer, Simulink.
 
 ## Author
 
-Manvith U M, Electrical and Electronics Engineering, NMAMIT, Nitte
-Guide: Gururaj K, Assistant Professor Gd-II, NMAMIT, Mangalore
+Manvith U M, Electrical and Electronics Engineering, NMAMIT, Nitte.
+Guide: Gururaj K, Assistant Professor Gd-II, NMAMIT.
